@@ -1,22 +1,24 @@
 @import "main";
 
 .login-view{
-  width: 400px;
+  width: 500px;
   margin: 180px auto;
-  height: 322px;
+  height: 360px;
   background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: 14px;
 }
 
 .login-header{
   width: 100%;
   float: left;
-  height: 70px;
-  line-height: 70px;
+  height: 85px;
+  line-height: 85px;
   text-align: center;
   color: #ffffff;
-  background-color: #3db5e2;
-  border-radius: 6px 6px 0 0;
+  background-color: #05c9e3;
+  border-radius: 14px 14px 0 0;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .login-form{
@@ -27,38 +29,67 @@
 .login-segment{
   width: 100%;
   float: left;
-  padding: 30px 20px;
+  padding: 40px 20px 30px 20px;
 }
 
 .login-field{
   width: 230px;
-  margin: 15px auto;
+  margin: 0 auto 12px auto;
 }
 
 .login-input{
   width: 100%;
-  height: 36px;
+  height: 34px;
   border: 1px solid #dddddd;
-  border-radius: 3px;
+  border-radius: 4px;
+  position: relative;
   input{
     width: 100%;
-    height: 34px;
+    height: 32px;
     border-style: none;
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 0 10px;
+    background-color: #fdfdfd;
+    color: #bebebe;
+    font-size: 14px;
+    padding-left: 30px;
   }
 }
 
 .login-button{
-  width: 150px;
-  margin: 0 auto 0 auto;
-  height: 36px;
-  line-height: 36px;
+  width: 176px;
+  margin: 40px auto 0 auto;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
-  font-size: 14px;
   color: #ffffff;
-  background-color: #3db5e2;
-  border-radius: 6px;
-  margin-top: 50px;
+  background-color: #05c9e3;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.icon{
+  width: 12px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 10px;
+}
+
+.user.icon{
+  background: url('../assets/matter/images/user.png') 0 0 no-repeat;
+}
+
+.password.icon{
+  background: url('../assets/matter/images/password.png') 0 0 no-repeat;
+}
+
+.login-text{
+  width: 250px;
+  font-size: 14px;
+  color: #929292;
+  margin: 0 auto;
+  padding-left: 8px;
 }

@@ -19,7 +19,7 @@
         <img src="../assets/image-square.png"/>
         <span class="home-user-name">姓名：朱莉亚</span>
         <span class="home-user-loginnumber">登录号： 808000</span>
-        <span class="home-activity-times">我参与的活动：<span style="color: #0cadc3">0</span>场</span>
+        <span class="home-activity-times">我参与的活动：<span style="color: #0cadc3" v-link="{path: '/my_activity'}">0</span>场</span>
     </div>
     <div class="home-label">近期活动</div>
     <div class="activity-list-view">

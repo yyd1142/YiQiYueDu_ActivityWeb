@@ -2,7 +2,7 @@
   <nav class="header-view">
     <div class="logo-view"></div>
     <div class="header row">
-      <a class="header-item" v-for="item in tabs" :class="item.active" :href="item.url">
+      <a class="header-item" v-for="item in tabs" :class="item.active" v-link="{path: item.url}">
         {{item.name}}
         <i class="active-icon"></i>
       </a>

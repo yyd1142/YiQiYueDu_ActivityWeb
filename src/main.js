@@ -8,13 +8,24 @@ var router = new VueRouter({
 
 router.map({
   '/': {
-    component: require('./components/home.vue')
+    component: require('./components/home.vue'),
+    name: 'home'
   },
   '/login': {
-    component: require('./components/login.vue')
+    component: require('./components/login.vue'),
+    name: 'login'
   },
   '/register': {
-    component: require('./components/register.vue')
+    component: require('./components/register.vue'),
+    name: 'register'
+  },
+  '/my_activity': {
+    component: require('./components/myActivity.vue'),
+    name: 'home'
+  },
+  '/wechat_course': {
+    component: require('./components/wechatCourse.vue'),
+    name: 'wechatCourse'
   }
 })
 router.start(App, '#app')
