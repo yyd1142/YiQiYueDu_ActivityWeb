@@ -1,10 +1,16 @@
+@mainColor:#0cadc3;
+@fontColor:#515151;
+@borderColor: #dddddd;
+@boxShadow: 3px 3px 3px #ebebeb;
 body{
   font-family: 'Microsoft YaHei';
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
   font-size: 16px;
-  color: #333333;
+  color: @fontColor;
+  background: url(../assets/matter/background-image.png) 0 0 no-repeat;
+  background-size: 100% 100%;
 }
 
 ul, li{
@@ -19,4 +25,9 @@ ul, li{
 
 div{
   box-sizing: border-box;
+  display: block;
+}
+
+a:active{
+  color: @fontColor;
 }
