@@ -25,10 +25,10 @@
           <span class="acitivi-name">袁晓峰－如何开展亲子阅读（微课堂）</span>
           <span class="acitivi-date">活动时间：2016年8月12日  19:30</span>
           <span class="acitivi-content">家长如何开展亲子阅读活动，一直是我们研究和讨论的重要话题之一，相信很多家长也会有相同的疑问，在这里阅读推广人袁晓峰就这个问题给大家做一个分享带着家长的疑问，我们来看看用什么方式在家庭教育阅读中起到关键的作用</span>
-          <span class="acitivi-btn" v-link="{path: '/course_detail'}">点击进入</span>
+          <span class="acitivi-btn" v-link="{path: '/offline_detail'}">点击进入</span>
           <div class="wechat-baoming">
             <span>限时免费</span>
-            <span v-link="{path: '/course_detail'}">报名</span>
+            <span v-link="{path: '/offline_detail'}">报名</span>
           </div>
         </li>
       </ul>
@@ -49,6 +49,6 @@
   <footer-component></footer-component>
 </template>
 
-<script src="../js/wechatCourse.js" type="text/javascript"></script>
+<script src="../js/offline.js" type="text/javascript"></script>
 
-<style lang="less" src="../style/wechatCourse.less"></style>
+<style lang="less" src="../style/offline.less"></style>

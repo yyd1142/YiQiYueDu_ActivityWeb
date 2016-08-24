@@ -26,6 +26,26 @@ router.map({
   '/wechat_course': {
     component: require('./components/wechatCourse.vue'),
     name: 'wechatCourse'
+  },
+  '/course_detail': {
+    component: require('./components/wechatCourseDetail.vue'),
+    name: 'wechatCourse'
+  },
+  '/video': {
+    component: require('./components/video.vue'),
+    name: 'video'
+  },
+  '/video_detail': {
+    component: require('./components/videoDetail.vue'),
+    name: 'video'
+  },
+  '/offline': {
+    component: require('./components/offline.vue'),
+    name: 'offline'
+  },
+  '/offline_detail': {
+    component: require('./components/offlineDetail.vue'),
+    name: 'offline'
   }
 })
 router.start(App, '#app')
