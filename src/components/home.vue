@@ -19,7 +19,7 @@
         <img src="../assets/image-square.png"/>
         <span class="home-user-name">姓名：朱莉亚</span>
         <span class="home-user-loginnumber">登录号： 808000</span>
-        <span class="home-activity-times">我参与的活动：<span style="color: #0cadc3" v-link="{path: '/my_activity'}">0</span>场</span>
+        <span class="home-activity-times">我参与的活动：<a href="/my_activity">0</a>场</span>
     </div>
     <div class="home-label">近期活动</div>
     <div class="activity-list-view">
@@ -29,7 +29,7 @@
           <span class="acitivi-name">袁晓峰－如何开展亲子阅读（微课堂）</span>
           <span class="acitivi-date">活动时间：2016年8月12日  19:30</span>
           <span class="acitivi-content">家长如何开展亲子阅读活动，一直是我们研究和讨论的重要话题之一，相信很多家长也会有相同的疑问，在这里阅读推广人袁晓峰就这个问题给大家做一个分享带着家长的疑问，我们来看看用什么方式在家庭教育阅读中起到关键的作用</span>
-          <span class="acitivi-btn">点击进入</span>
+          <span class="acitivi-btn"><a href="/course_detail">点击进入</a></span>
         </li>
       </ul>
       <div class="fenye-view">

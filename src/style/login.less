@@ -3,14 +3,13 @@
 .login-view{
   width: 500px;
   margin: 180px auto;
-  height: 360px;
   background-color: #ffffff;
   border-radius: 14px;
+  padding-bottom: 15px;
 }
 
 .login-header{
   width: 100%;
-  float: left;
   height: 85px;
   line-height: 85px;
   text-align: center;
@@ -23,12 +22,10 @@
 
 .login-form{
   width: 100%;
-  float: left;
 }
 
 .login-segment{
   width: 100%;
-  float: left;
   padding: 40px 20px 30px 20px;
 }
 
@@ -40,7 +37,6 @@
 .login-input{
   width: 100%;
   height: 34px;
-  border: 1px solid #dddddd;
   border-radius: 4px;
   position: relative;
   input{
@@ -53,6 +49,7 @@
     color: #bebebe;
     font-size: 14px;
     padding-left: 30px;
+    border: 1px solid #dddddd;
   }
 }
 
@@ -92,4 +89,36 @@
   color: #929292;
   margin: 0 auto;
   padding-left: 8px;
+}
+
+.form.validation.warp{
+  width: 100%;
+  padding: 0 15px;
+}
+
+.form.validation.table-view{
+  width: 100%;
+  border: 1px solid #9F3A38;
+  background-color: #FFF6F6;
+  padding: 10px;
+  border-radius: 2px;
+  li{
+    color: #9F3A38;
+    width: 100%;
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  li:before{
+    content: '•';
+    left: -1em;
+    height: 100%;
+    vertical-align: baseline;
+    margin-right: 6px;
+  }
+}
+
+.error-item{
+  border: 1px solid #9F3A38 !important;
+  background-color: #FFF6F6 !important;
+  color: #9F3A38 !important;
 }

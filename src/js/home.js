@@ -5,7 +5,8 @@ var i = 0;
 module.exports = {
   data() {
     return {
-      silderWidth: Math.ceil(47 / 4) * 696
+      silderWidth: Math.ceil(47 / 4) * 696,
+      goTop: false
     }
   },
   components: {

@@ -5,7 +5,8 @@ var tabs = [{name: '活动首页', active: 'header-active', url: '/', path: 'hom
 module.exports = {
   data() {
     return {
-      tabs: tabs
+      tabs: tabs,
+      goTop: false
     }
   },
   ready(){
@@ -17,8 +18,22 @@ module.exports = {
         item.active = ''
       }
     })
+
+    var self = this;
+    window.onscroll = function(){
+      let webHeight = document.body.clientHeight;
+      let t = document.documentElement.scrollTop || document.body.scrollTop;
+      if(t >= webHeight){
+        self.goTop = true;
+      }else{
+        self.goTop = false;
+      }
+    }
   },
   methods: {
-
+    backTop(){
+      this.goTop = false;
+      window.location.href = '#top';
+    }
   }
 };

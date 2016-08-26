@@ -27,4 +27,5 @@
   </footer>
 </template>
 
+
 <style src="../style/footer.less" lang="less"></style>

@@ -1,0 +1,141 @@
+@import "main";
+
+.modal-warp{
+  background-color: rgba(34, 34, 34, 0.62);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-view{
+  width: 495px;
+  height: 362px;
+  background-color: #ffffff;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+  border-radius: 8px;
+  padding: 34px;
+}
+
+.modal-header{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.modal-header-title{
+  text-align: center;
+  color: #333333;
+  font-size: 28px;
+  margin-bottom: 10px;
+  width: 100%;
+  float: left;
+}
+
+.header-name{
+  width: 100%;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+  color: #999999;
+}
+
+.close-icon{
+  background: url(../assets/matter/close_icon.png) 0 0 no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: -20px;
+  cursor: pointer;
+}
+
+.modal-body{
+  width: 100%;
+  float: left;
+}
+
+.modal-form{
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+
+.modal-input{
+  float: left;
+  margin: 10px 30px;
+  width: 370px;
+  label{
+    width: 100px;
+    text-align: right;
+    float: left;
+    font-size: 18px;
+    color: #535353;
+    margin-top: 3px;
+  }
+  input{
+    width: 270px;
+    float: left;
+    height: 34px;
+    background-color: #edf3f4;
+    border-style: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #222222;
+  }
+}
+
+.action-view{
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+
+.next-btn{
+  background-color: #5bcdd8;
+  margin: 34px auto;
+}
+
+.pay-btn, .cancel-btn, .next-btn{
+  width: 146px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-btn{
+  background-color: #5bcdd8;
+  float: left;
+  margin: 0 15px 0 55px;
+}
+
+.cancel-btn{
+  background-color: #d2d2d2;
+  float: left;
+}
+
+.modal-price{
+  color: #7b838e;
+  font-size: 24px;
+  width: 100%;
+  float: left;
+  margin: 53px 0;
+  text-align: center;
+  span{
+    color: #ff2222;
+    font-size: 28px;
+  }
+}
