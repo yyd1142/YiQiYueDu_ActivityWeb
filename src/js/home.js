@@ -13,6 +13,9 @@ module.exports = {
     headerComponent,
     footerComponent
   },
+  ready(){
+    console.log(this);
+  },
   methods: {
     slider(id, len){
         var siderX = null;

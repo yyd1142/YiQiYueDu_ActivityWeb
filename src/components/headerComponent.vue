@@ -1,8 +1,8 @@
 <template>
   <nav class="header-view">
-    <div class="logo-view"></div>
+    <div class="logo-view" v-link="{path: '/#top'}"></div>
     <div class="header row">
-      <a class="header-item" v-for="item in tabs" :class="item.active" :href="item.url">
+      <a class="header-item" v-for="item in tabs" :class="item.active" v-link="{path: item.url + '#top'}">
         {{item.name}}
         <i class="active-icon"></i>
       </a>
@@ -14,7 +14,7 @@
       <ul class="menu-table-view">
         <li class="menu-table-cell">修改密码</li>
         <li class="menu-table-cell">我的活动</li>
-        <li class="menu-table-cell"><a href="/login">退出</a></li>
+        <li class="menu-table-cell"><a v-link="{path: '/login#top'}">退出</a></li>
       </ul>
     </div>
   </nav>

@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import vueService from './serivce'
 import App from './App.vue'
 Vue.use(VueRouter)
+Vue.use(vueService)
 var router = new VueRouter({
   history: true
 })
