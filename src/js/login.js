@@ -1,5 +1,6 @@
 "use strict"
-
+import md5 from 'js-md5';
+import hintView from '../components/hintViewComponent.vue';
 module.exports = {
   data() {
     return {
@@ -8,7 +9,23 @@ module.exports = {
       errorcode2: false,
       item: {},
       userNumberErrorStyle: '',
-      passwordErrorStyle: ''
+      passwordErrorStyle: '',
+      hintText: '',
+      hintShow: ''
+    }
+  },
+  components: {
+    'hint-view': {
+      template: hintView.template,
+      props: {
+        message: '',
+        hashint: ''
+      },
+      methods: {
+        closeFn(){
+          this.hashint = false;
+        }
+      }
     }
   },
   methods: {
@@ -24,6 +41,21 @@ module.exports = {
         this.errorcode2 = true;
         this.passwordErrorStyle = 'error-item';
       }
+      this.hintText = '操作无效';
+      this.hintShow = true;
+      var self = this;
+      var params = {
+        m: 'login',
+        userID: item.name,
+        password: md5(item.pwd)
+      };
+      this.$httpGet('users', params, function (code, data) {
+        if (code == 0) {
+
+        } else {
+
+        }
+      });
     }
   }
 };

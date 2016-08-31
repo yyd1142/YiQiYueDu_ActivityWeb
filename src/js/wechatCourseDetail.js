@@ -1,28 +1,38 @@
 "use strict"
 import headerComponent from '../components/headerComponent.vue'
 import footerComponent from '../components/footerComponent.vue'
+import baomingModal from '../components/baomingModal.vue'
 module.exports = {
   data() {
     return {
-      modalShow: '',
-      step: 1
+      baomingModal: '',
+      baomingStep: ''
     }
   },
   components: {
     headerComponent,
-    footerComponent
+    footerComponent,
+    'baoming-modal': {
+      template: baomingModal.template,
+      props: {
+        modalShow: '',
+        step: ''
+      },
+      methods: {
+        cancel(){
+          let bodyEl = document.body;
+          bodyEl.style.overflow = 'auto';
+          this.modalShow = false;
+        }
+      }
+    }
   },
   methods: {
     baoming(){
-      this.step = 1;
+      this.baomingStep = 1;
       let bodyEl = document.body;
       bodyEl.style.overflow = 'hidden';
-      this.modalShow = true;
-    },
-    cancel(){
-      let bodyEl = document.body;
-      bodyEl.style.overflow = 'auto';
-      this.modalShow = false;
+      this.baomingModal = true;
     }
   }
 };

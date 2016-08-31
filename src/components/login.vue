@@ -30,6 +30,7 @@
         </ul>
       </div>
   </div>
+  <hint-view :hashint.sync="hintShow" :message.sync="hintText"></hint-view>
 </template>
 <script src="../js/login.js" type="text/javascript"></script>
 <style src="../style/login.less" lang="less"></style>

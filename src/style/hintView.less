@@ -1,0 +1,65 @@
+@import "main";
+
+.hint-view-warp{
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(34, 34, 34, 0.69);
+}
+
+.hint-view-main {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: 250px;
+  border-radius: 3px;
+}
+.hint-view-header {
+  width: 100%;
+  height: 45px;
+  //border-bottom: 1px solid #ebebeb;
+}
+.hint-icon-close {
+  background: url(../assets/matter/close_icon.png) 0 0 no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  margin: 14px 20px 0 0;
+  cursor: pointer;
+  float: right;
+}
+.hint-view-content {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  //border-bottom: 1px solid #ebebeb;
+}
+.hint-view-actions {
+  width: 100%;
+  height: 45px;
+}
+.hint-btn-basics {
+  min-width: 100px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  background-color: #E0E1E2;
+  color: rgba(0,0,0,.6);
+  font-size: 14px;
+  float: right;
+  margin: 7px 20px 0 0;
+  cursor: pointer;
+}
+
+.hint-btn-basics:hover{
+  background-color: #CACBCD;
+  background-image: none;
+  box-shadow: 0 0 0 1px transparent inset,0 0 0 0 rgba(34,36,38,.15) inset;
+  color: rgba(0,0,0,.8);
+}
