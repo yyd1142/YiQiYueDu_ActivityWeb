@@ -15,6 +15,12 @@ module.exports = {
     return {
         silderWidth: Math.ceil(47 / 4) * 696,
         goTop: false,
+        slidenLength: '',
+        pageInfo: {
+            page: '',
+            pageCount: '',
+            pageNumber: ''
+        },
         sliderItems: [],
         recentActivityItems: [],
         activityTotalItems: [],
@@ -27,10 +33,12 @@ module.exports = {
     footerComponent
   },
   ready(){
-    console.log(this);
+    this.mrmjSlider();
+    this.recentActivity();
   },
   methods: {
-    slider(id, len){
+    slider(id){
+        var len = this.slidenLength;
         var siderX = null;
         var x = null;
         var el = document.getElementById('slide');
@@ -64,35 +72,41 @@ module.exports = {
       mrmjSlider(){
           var self = this;
           if(!_isSliderUpdate){
-              this.sliderItems = _isSlider;
+              this.slidenLength = _isSlider.datas.length;
+              this.sliderItems = _isSlider.datas;
               return;
           }
-          var params = {
-              m: ''
-          };
-          this.$httpGet('', params, function (code, data) {
+          var params = {};
+          this.$httpGet('mrmj', params, function (code, data) {
               if (code == 0) {
-                  self.sliderItems = data.response;
+                  self.sliderItems = data.response.datas;
+                  self.slidenLength = data.response.datas.length;
                   _isSlider = data.response;
                   _isSliderUpdate = false;
-              }else{
-
-              }
+              }else{}
           });
       },
       //近期活动列表
       recentActivity(){
           var self = this;
           if(!_isRecentActivityUpdate){
-              this.recentActivityItems = _isRecentActivity;
+              this.recentActivityItems = _isRecentActivity.datas;
+              this.pageInfo = {
+                  page: _isRecentActivity.page,
+                  pageCount: _isRecentActivity.pageCount,
+                  pageNumber: _isRecentActivity.pageNumber
+              };
               return;
           }
-          var params = {
-              m: ''
-          };
-          this.$httpGet('', params, function (code, data) {
+          var params = {};
+          this.$httpGet('activity/recent', params, function (code, data) {
               if (code == 0) {
-                  self.recentActivityItems = data.response;
+                  self.recentActivityItems = data.response.datas;
+                  self.pageInfo = {
+                      page: data.response.page,
+                      pageCount: data.response.pageCount,
+                      pageNumber: data.response.pageNumber
+                  };
                   _isRecentActivity = data.response;
                   _isRecentActivityUpdate = false;
               }else{
@@ -140,6 +154,5 @@ module.exports = {
               }
           });
       }
-
   }
 };

@@ -8,7 +8,7 @@
       <span class="header-date">报名截止时间：2016年8月12日 19:00<br>活动时间：2016年8月12日 19:30～20:30</span>
       <span class="header-price">￥200</span>
       <div class="header-baoming">
-        <span class="header-baoming-btn" v-on:click="baoming()">报名</span>
+        <span class="header-baoming-btn" @click="baoming">报名</span>
         <div class="baomingrenshu">已有<span>456</span>人报名</div>
       </div>
     </div>

@@ -19,7 +19,7 @@
     </div>
   </nav>
   <div class="hidden-view-header" id="top"></div>
-  <div class="go-top" v-if="goTop" v-on:click="backTop()">返回顶部</div>
+  <div class="go-top" v-if="goTop" @click="backTop">返回顶部</div>
 </template>
 
 <script src="../js/header.js"></script>

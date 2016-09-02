@@ -3,13 +3,13 @@
   <div class="page-view-home">
     <div class="home-label wechat-label">视频讲座</div>
     <div class="video-tabs">
-      <span class="video-tabs-item" v-for="item in videotbas" :class="item.active" v-on:click="videoTab($index)">{{item.name}}</span>
+      <span class="video-tabs-item" v-for="item in videotbas" :class="item.active" @click="videoTab($index)">{{item.name}}</span>
     </div>
     <div class="activity-list-view wechat-list-view">
       <div class="activity-tab-view">
         <!--<span class="activity-tab-cell" v-for="item in tabs" :class="item.active" v-on:click="tab($index)">{{item.name}}</span>-->
         <div class="tabs-warp">
-          <span class="video-tab-cell" v-for="item in tabs" :class="item.active" v-on:click="tab($index)">{{item.name}}</span>
+          <span class="video-tab-cell" v-for="item in tabs" :class="item.active" @click="tab($index)">{{item.name}}</span>
         </div>
         <div class="city-select-view paixu-select-view">
           <span>排序：</span>

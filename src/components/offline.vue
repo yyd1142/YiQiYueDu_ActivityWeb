@@ -4,7 +4,7 @@
     <div class="home-label wechat-label">我参与的活动</div>
     <div class="activity-list-view wechat-list-view">
       <div class="activity-tab-view">
-        <span class="activity-tab-cell" v-for="item in tabs" :class="item.active" v-on:click="tab($index)">{{item.name}}</span>
+        <span class="activity-tab-cell" v-for="item in tabs" :class="item.active" @click="tab($index)">{{item.name}}</span>
         <div class="city-select-view">
           <span>选择城市：</span>
           <select class="city-select-main">

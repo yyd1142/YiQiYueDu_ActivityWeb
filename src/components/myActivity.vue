@@ -4,7 +4,7 @@
     <div class="home-label">我参与的活动</div>
     <div class="activity-list-view">
       <div class="activity-tab-view">
-        <span class="activity-tab-cell" v-for="item in tabs" :class="item.active" v-on:click="tab($index)">{{item.name}}</span>
+        <span class="activity-tab-cell" v-for="item in tabs" :class="item.active" @click="tab($index)">{{item.name}}</span>
       </div>
       <ul class="activity-table-view">
         <li class="activity-table-cell" v-for="item in 10">

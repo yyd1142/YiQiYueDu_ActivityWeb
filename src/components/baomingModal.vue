@@ -4,7 +4,7 @@
             <div class="modal-header">
                 <span class="modal-header-title">活动报名</span>
                 <span class="header-name">袁晓峰－如何开展亲子阅读（微课堂）</span>
-                <i class="close-icon" v-on:click="cancel()"></i>
+                <i class="close-icon" @click="cancel"></i>
             </div>
             <div class="modal-body" v-show="step == 1">
                 <form class="modal-form">
@@ -27,8 +27,8 @@
                 <div class="modal-price">本次活动报名费用为<span>2</span>元</div>
             </div>
             <div class="action-view" v-show="step == 2">
-                <div class="pay-btn" >确定支付</div>
-                <div class="cancel-btn" v-on:click="cancel()">取消</div>
+                <div class="pay-btn" @click="pay">确定支付</div>
+                <div class="cancel-btn" @click="cancel">取消</div>
             </div>
             <!---->
         </div>

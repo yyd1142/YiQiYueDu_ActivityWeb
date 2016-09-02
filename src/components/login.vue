@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="login-text">请验证您的账号确保活动参与者是本人</div>
-          <div class="login-button" v-on:click="login()">验证账号</div>
+          <div class="login-button" @click="login">验证账号</div>
         </div>
       </form>
       <div class="form validation warp" v-if="validation" >

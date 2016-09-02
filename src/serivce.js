@@ -8,7 +8,7 @@ Vue.use(VueResource);
 
 ;(function () {
     var vue; // lazy bind
-    var baseURL = 'http://120.24.165.155:8083/';
+    var baseURL = 'http://localhost:3001/';
     var asyncData = {
         created: function (){
             if (!vue) {

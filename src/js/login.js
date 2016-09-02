@@ -21,8 +21,14 @@ module.exports = {
         message: '',
         hashint: ''
       },
+      ready(){
+        let bodyEl = document.body;
+        bodyEl.style.overflow = 'hidden';
+      },
       methods: {
         closeFn(){
+          let bodyEl = document.body;
+          bodyEl.style.overflow = 'auto';
           this.hashint = false;
         }
       }

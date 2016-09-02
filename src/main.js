@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import vueService from './serivce'
+import vueFilter from './filter'
 import App from './App.vue'
 Vue.use(VueRouter)
 Vue.use(vueService)
